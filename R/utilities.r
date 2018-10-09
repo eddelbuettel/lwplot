@@ -145,7 +145,7 @@ should_stop <- function(expr) {
 #'
 #' @export
 #' @keywords internal
-waiver <- function() structure(NULL, class = "waiver")
+waiver <- function() structure(list(), class = "waiver")
 
 is.waive <- function(x) inherits(x, "waiver")
 
