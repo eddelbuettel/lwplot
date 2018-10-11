@@ -11,8 +11,8 @@ geom_hex(mapping = NULL, data = NULL, stat = "binhex",
   inherit.aes = TRUE)
 
 stat_bin_hex(mapping = NULL, data = NULL, geom = "hex",
-  position = "identity", ..., bins = 30, binwidth = NULL, na.rm = FALSE,
-  show.legend = NA, inherit.aes = TRUE)
+  position = "identity", ..., bins = 30, binwidth = NULL,
+  na.rm = FALSE, show.legend = NA, inherit.aes = TRUE)
 }
 \arguments{
 \item{mapping}{Set of aesthetic mappings created by \code{\link{aes}} or
@@ -68,8 +68,9 @@ Hexagon binning.
 }
 \section{Aesthetics}{
 
-\Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "hex")}
+\Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "hex")}
 }
+
 \examples{
 d <- ggplot(diamonds, aes(carat, price))
 d + geom_hex()
@@ -88,4 +89,3 @@ d + geom_hex(binwidth = c(.1, 500))
 \seealso{
 \code{\link{stat_bin2d}} for rectangular binning
 }
-

@@ -48,4 +48,3 @@ p + annotate("pointrange", x = 3.5, y = 20, ymin = 12, ymax = 28,
 
 p + annotate("text", x = 2:3, y = 20:21, label = c("my label", "label 2"))
 }
-

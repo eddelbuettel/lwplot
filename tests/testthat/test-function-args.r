@@ -7,7 +7,7 @@ filter_args <- function(x) {
 }
 
 test_that("geom_xxx and GeomXxx$draw arg defaults match", {
-  ggplot2_ns <- asNamespace("ggplot2")
+  ggplot2_ns <- asNamespace("lwplot")
   objs <- ls(ggplot2_ns)
   geom_fun_names <- objs[grepl("^(geom|annotation)_", objs)]
   # These aren't actually geoms, or need special parameters and can't be tested this way.
@@ -40,7 +40,7 @@ test_that("geom_xxx and GeomXxx$draw arg defaults match", {
 
 
 test_that("stat_xxx and StatXxx$draw arg defaults match", {
-  ggplot2_ns <- asNamespace("ggplot2")
+  ggplot2_ns <- asNamespace("lwplot")
   objs <- ls(ggplot2_ns)
   stat_fun_names <- objs[grepl("^stat_", objs)]
   # These aren't actually stats, or need special parameters and can't be tested this way.

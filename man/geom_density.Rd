@@ -10,8 +10,9 @@ geom_density(mapping = NULL, data = NULL, stat = "density",
   inherit.aes = TRUE)
 
 stat_density(mapping = NULL, data = NULL, geom = "area",
-  position = "stack", ..., bw = "nrd0", adjust = 1, kernel = "gaussian",
-  trim = FALSE, na.rm = FALSE, show.legend = NA, inherit.aes = TRUE)
+  position = "stack", ..., bw = "nrd0", adjust = 1,
+  kernel = "gaussian", trim = FALSE, na.rm = FALSE,
+  show.legend = NA, inherit.aes = TRUE)
 }
 \arguments{
 \item{mapping}{Set of aesthetic mappings created by \code{\link{aes}} or
@@ -78,7 +79,7 @@ with underlying smoothness.
 }
 \section{Aesthetics}{
 
-\Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "density")}
+\Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "density")}
 }
 
 \section{Computed variables}{
@@ -90,6 +91,7 @@ with underlying smoothness.
   \item{scaled}{density estimate, scaled to maximum of 1}
 }
 }
+
 \examples{
 ggplot(diamonds, aes(carat)) +
   geom_density()
@@ -128,4 +130,3 @@ See \code{\link{geom_histogram}}, \code{\link{geom_freqpoly}} for
   other methods of displaying continuous distribution.
   See \code{\link{geom_violin}} for a compact density display.
 }
-

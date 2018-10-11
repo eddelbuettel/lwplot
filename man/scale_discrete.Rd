@@ -58,4 +58,3 @@ ggplot(mpg, aes(reorder(manufacturer, displ), cty)) +
   scale_x_discrete(labels = abbreviate)
 }
 }
-

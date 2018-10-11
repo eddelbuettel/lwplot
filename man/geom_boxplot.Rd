@@ -6,14 +6,15 @@
 \title{Box and whiskers plot.}
 \usage{
 geom_boxplot(mapping = NULL, data = NULL, stat = "boxplot",
-  position = "dodge", ..., outlier.colour = NULL, outlier.color = NULL,
-  outlier.shape = 19, outlier.size = 1.5, outlier.stroke = 0.5,
-  notch = FALSE, notchwidth = 0.5, varwidth = FALSE, na.rm = FALSE,
-  show.legend = NA, inherit.aes = TRUE)
+  position = "dodge", ..., outlier.colour = NULL,
+  outlier.color = NULL, outlier.shape = 19, outlier.size = 1.5,
+  outlier.stroke = 0.5, notch = FALSE, notchwidth = 0.5,
+  varwidth = FALSE, na.rm = FALSE, show.legend = NA,
+  inherit.aes = TRUE)
 
 stat_boxplot(mapping = NULL, data = NULL, geom = "boxplot",
-  position = "dodge", ..., coef = 1.5, na.rm = FALSE, show.legend = NA,
-  inherit.aes = TRUE)
+  position = "dodge", ..., coef = 1.5, na.rm = FALSE,
+  show.legend = NA, inherit.aes = TRUE)
 }
 \arguments{
 \item{mapping}{Set of aesthetic mappings created by \code{\link{aes}} or
@@ -99,7 +100,7 @@ See McGill et al. (1978) for more details.
 }
 \section{Aesthetics}{
 
-\Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "boxplot")}
+\Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "boxplot")}
 }
 
 \section{Computed variables}{
@@ -115,6 +116,7 @@ See McGill et al. (1978) for more details.
   \item{ymax}{upper whisker = largest observation less than or equal to upper hinge + 1.5 * IQR}
 }
 }
+
 \examples{
 p <- ggplot(mpg, aes(class, hwy))
 p + geom_boxplot()
@@ -166,4 +168,3 @@ McGill, R., Tukey, J. W. and Larsen, W. A. (1978) Variations of
   continuous variable, \code{\link{geom_jitter}} for another way to look
   at conditional distributions.
 }
-

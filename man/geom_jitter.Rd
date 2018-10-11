@@ -5,8 +5,8 @@
 \title{Points, jittered to reduce overplotting.}
 \usage{
 geom_jitter(mapping = NULL, data = NULL, stat = "identity",
-  position = "jitter", ..., width = NULL, height = NULL, na.rm = FALSE,
-  show.legend = NA, inherit.aes = TRUE)
+  position = "jitter", ..., width = NULL, height = NULL,
+  na.rm = FALSE, show.legend = NA, inherit.aes = TRUE)
 }
 \arguments{
 \item{mapping}{Set of aesthetic mappings created by \code{\link{aes}} or
@@ -76,8 +76,9 @@ in smaller datasets.
 }
 \section{Aesthetics}{
 
-\Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "point")}
+\Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "point")}
 }
+
 \examples{
 p <- ggplot(mpg, aes(cyl, hwy))
 p + geom_point()
@@ -99,4 +100,3 @@ ggplot(mpg, aes(cty, hwy)) + geom_jitter(width = 0.5, height = 0.5)
  \code{\link{geom_boxplot}} for another way of looking at the conditional
     distribution of a variable
 }
-

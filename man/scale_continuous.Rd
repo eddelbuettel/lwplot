@@ -3,12 +3,12 @@
 \name{scale_continuous}
 \alias{scale_continuous}
 \alias{scale_x_continuous}
-\alias{scale_x_log10}
-\alias{scale_x_reverse}
-\alias{scale_x_sqrt}
 \alias{scale_y_continuous}
+\alias{scale_x_log10}
 \alias{scale_y_log10}
+\alias{scale_x_reverse}
 \alias{scale_y_reverse}
+\alias{scale_x_sqrt}
 \alias{scale_y_sqrt}
 \title{Continuous position scales (x & y).}
 \usage{
@@ -166,4 +166,3 @@ ggplot(movies, aes(rating, votes)) +
 \seealso{
 \code{\link{scale_date}} for date/time position scales.
 }
-

@@ -60,4 +60,3 @@ guide. See \code{\link{guides}} for more info.}
 Discrete scale constructor.
 }
 \keyword{internal}
-

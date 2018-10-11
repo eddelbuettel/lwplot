@@ -12,4 +12,3 @@ is.ggproto(x)
 \description{
 Is an object a ggproto object?
 }
-

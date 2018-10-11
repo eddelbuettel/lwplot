@@ -15,4 +15,3 @@ facet(..., shrink = TRUE, subclass = c())
 Create new facetting specification.  For internal use only.
 }
 \keyword{internal}
-

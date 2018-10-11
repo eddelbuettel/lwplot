@@ -66,6 +66,7 @@ Empirical Cumulative Density Function
   \item{y}{cumulative density corresponding x}
 }
 }
+
 \examples{
 \donttest{
 df <- data.frame(x = rnorm(1000))
@@ -77,4 +78,3 @@ df <- data.frame(x = c(rnorm(100, 0, 3), rnorm(100, 0, 10)),
 ggplot(df, aes(x, colour = g)) + stat_ecdf()
 }
 }
-

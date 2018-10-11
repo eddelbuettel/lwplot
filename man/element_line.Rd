@@ -21,4 +21,3 @@ element_line(colour = NULL, size = NULL, linetype = NULL,
 \description{
 Theme element: line.
 }
-

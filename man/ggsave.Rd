@@ -62,4 +62,3 @@ ggsave(file, device = "pdf")
 unlink(file)
 }
 }
-

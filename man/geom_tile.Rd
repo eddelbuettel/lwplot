@@ -79,8 +79,9 @@ performance special case for when all the tiles are the same size.
 }
 \section{Aesthetics}{
 
-\Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "tile")}
+\Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "tile")}
 }
+
 \examples{
 # The most common use for rectangles is to draw a surface. You always want
 # to use geom_raster here because it's so much faster, and produces
@@ -125,4 +126,3 @@ cars + stat_density(aes(fill = ..density..), geom = "raster", position = "identi
 cars + stat_density(aes(fill = ..count..), geom = "raster", position = "identity")
 }
 }
-

@@ -142,9 +142,11 @@ print.ggplot <- function(x, newpage = is.null(vp), vp = NULL, ...) {
   # Record dependency on 'ggplot2' on the display list
   # (AFTER grid.newpage())
   grDevices::recordGraphics(
-    requireNamespace("ggplot2", quietly = TRUE),
+    #requireNamespace("ggplot2", quietly = TRUE),
+    requireNamespace("lwplot", quietly = TRUE),
     list(),
-    getNamespace("ggplot2")
+    #getNamespace("ggplot2")
+    getNamespace("lwplot")
   )
 
   data <- ggplot_build(x)

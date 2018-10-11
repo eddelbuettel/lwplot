@@ -110,4 +110,3 @@ ggplot(economics_long, aes(date, value)) +
   theme(strip.background = element_blank())
 }
 }
-

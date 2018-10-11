@@ -7,7 +7,8 @@
 \usage{
 geom_contour(mapping = NULL, data = NULL, stat = "contour",
   position = "identity", ..., lineend = "butt", linejoin = "round",
-  linemitre = 1, na.rm = FALSE, show.legend = NA, inherit.aes = TRUE)
+  linemitre = 1, na.rm = FALSE, show.legend = NA,
+  inherit.aes = TRUE)
 
 stat_contour(mapping = NULL, data = NULL, geom = "contour",
   position = "identity", ..., na.rm = FALSE, show.legend = NA,
@@ -69,7 +70,7 @@ Display contours of a 3d surface in 2d.
 }
 \section{Aesthetics}{
 
-\Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "contour")}
+\Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "contour")}
 }
 
 \section{Computed variables}{
@@ -78,6 +79,7 @@ Display contours of a 3d surface in 2d.
  \item{level}{height of contour}
 }
 }
+
 \examples{
 #' # Basic plot
 v <- ggplot(faithfuld, aes(waiting, eruptions, z = density))
@@ -107,4 +109,3 @@ v + geom_raster(aes(fill = density)) +
 \seealso{
 \code{\link{geom_density_2d}}: 2d density contours
 }
-

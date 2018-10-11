@@ -6,15 +6,15 @@
 \title{Textual annotations.}
 \usage{
 geom_label(mapping = NULL, data = NULL, stat = "identity",
-  position = "identity", ..., parse = FALSE, nudge_x = 0, nudge_y = 0,
-  label.padding = unit(0.25, "lines"), label.r = unit(0.15, "lines"),
-  label.size = 0.25, na.rm = FALSE, show.legend = NA,
-  inherit.aes = TRUE)
+  position = "identity", ..., parse = FALSE, nudge_x = 0,
+  nudge_y = 0, label.padding = unit(0.25, "lines"),
+  label.r = unit(0.15, "lines"), label.size = 0.25, na.rm = FALSE,
+  show.legend = NA, inherit.aes = TRUE)
 
 geom_text(mapping = NULL, data = NULL, stat = "identity",
-  position = "identity", ..., parse = FALSE, nudge_x = 0, nudge_y = 0,
-  check_overlap = FALSE, na.rm = FALSE, show.legend = NA,
-  inherit.aes = TRUE)
+  position = "identity", ..., parse = FALSE, nudge_x = 0,
+  nudge_y = 0, check_overlap = FALSE, na.rm = FALSE,
+  show.legend = NA, inherit.aes = TRUE)
 }
 \arguments{
 \item{mapping}{Set of aesthetic mappings created by \code{\link{aes}} or
@@ -88,7 +88,7 @@ resize a plot, labels stay the same size, but the size of the axes changes.
 }
 \section{Aesthetics}{
 
-\Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "text")}
+\Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "text")}
 }
 
 \section{\code{geom_label}}{
@@ -107,6 +107,7 @@ aesthetics. These can either be a number between 0 (right/bottom) and
 Inward always aligns text towards the center, and outward aligns
 it away from the center
 }
+
 \examples{
 p <- ggplot(mtcars, aes(wt, mpg, label = rownames(mtcars)))
 
@@ -190,4 +191,3 @@ ggplot(df, aes(x, y)) +
   geom_text(aes(label = text), vjust = "inward", hjust = "inward")
 }
 }
-

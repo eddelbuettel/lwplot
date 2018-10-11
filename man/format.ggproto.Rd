@@ -18,4 +18,3 @@ and inherited members. If \code{FALSE}, show the inheritance hierarchy.}
 \description{
 Format a ggproto object
 }
-

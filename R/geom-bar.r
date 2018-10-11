@@ -21,7 +21,7 @@
 #' the bars and then stretching or squashing to the same height.
 #'
 #' @section Aesthetics:
-#'   \Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "bar")}
+#'   \Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "bar")}
 #'
 #' @seealso \code{\link{geom_histogram}} for continuous data,
 #'   \code{\link{position_dodge}} for creating side-by-side barcharts.

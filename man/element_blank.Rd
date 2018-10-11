@@ -11,4 +11,3 @@ element_blank()
 Theme element: blank.
 This theme element draws nothing, and assigns no space
 }
-

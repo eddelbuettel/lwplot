@@ -20,4 +20,3 @@ If a ggproto object has a \code{$print} method, this will call that method.
 Otherwise, it will print out the members of the object, and optionally, the
 members of the inherited objects.
 }
-

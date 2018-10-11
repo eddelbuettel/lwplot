@@ -1,7 +1,7 @@
 #' Violin plot.
 #'
 #' @section Aesthetics:
-#' \Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "violin")}
+#' \Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "violin")}
 #'
 #' @inheritParams layer
 #' @inheritParams geom_point

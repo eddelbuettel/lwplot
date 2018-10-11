@@ -2,8 +2,8 @@
 % Please edit documentation in R/geom-bin2d.r, R/stat-bin2d.r
 \name{geom_bin2d}
 \alias{geom_bin2d}
-\alias{stat_bin2d}
 \alias{stat_bin_2d}
+\alias{stat_bin2d}
 \title{Add heatmap of 2d bin counts.}
 \usage{
 geom_bin2d(mapping = NULL, data = NULL, stat = "bin2d",
@@ -11,8 +11,8 @@ geom_bin2d(mapping = NULL, data = NULL, stat = "bin2d",
   inherit.aes = TRUE)
 
 stat_bin_2d(mapping = NULL, data = NULL, geom = "tile",
-  position = "identity", ..., bins = 30, binwidth = NULL, drop = TRUE,
-  na.rm = FALSE, show.legend = NA, inherit.aes = TRUE)
+  position = "identity", ..., bins = 30, binwidth = NULL,
+  drop = TRUE, na.rm = FALSE, show.legend = NA, inherit.aes = TRUE)
 }
 \arguments{
 \item{mapping}{Set of aesthetic mappings created by \code{\link{aes}} or
@@ -70,8 +70,9 @@ Add heatmap of 2d bin counts.
 }
 \section{Aesthetics}{
 
-\Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("stat", "bin2d")}
+\Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("stat", "bin2d")}
 }
+
 \examples{
 d <- ggplot(diamonds, aes(x, y)) + xlim(4, 10) + ylim(4, 10)
 d + geom_bin2d()
@@ -87,4 +88,3 @@ d + geom_bin2d(binwidth = c(0.1, 0.1))
 \seealso{
 \code{\link{stat_binhex}} for hexagonal binning
 }
-

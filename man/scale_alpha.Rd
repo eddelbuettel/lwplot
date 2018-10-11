@@ -35,4 +35,3 @@ p + scale_alpha(range = c(0.4, 0.8))
   geom_point(aes(alpha = factor(cyl))))
 p + scale_alpha_discrete(range = c(0.4, 0.8))
 }
-

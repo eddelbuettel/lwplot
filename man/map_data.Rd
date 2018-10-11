@@ -43,4 +43,3 @@ ggplot(choro, aes(long, lat)) +
   coord_map("albers",  at0 = 45.5, lat1 = 29.5)
 }
 }
-

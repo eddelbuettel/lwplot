@@ -17,4 +17,3 @@ Calculate mean and standard errors on either side.
 \seealso{
 for use with \code{\link{stat_summary}}
 }
-

@@ -78,4 +78,3 @@ rep_el$text
 \seealso{
 \code{\link{theme}}
 }
-

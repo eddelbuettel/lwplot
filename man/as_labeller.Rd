@@ -43,4 +43,3 @@ p + facet_grid(cyl ~ am, labeller = labeller(am = to_string))
 \seealso{
 \code{\link{labeller}()}, \link{labellers}
 }
-

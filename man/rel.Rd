@@ -18,4 +18,3 @@ ggplot(df, aes(x, y)) +
   geom_point() +
   theme(axis.title.x = element_text(size = rel(2.5)))
 }
-

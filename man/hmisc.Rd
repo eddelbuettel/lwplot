@@ -30,4 +30,3 @@ See the Hmisc documentation for details of their options.
   \code{\link[Hmisc]{smean.cl.normal}}, \code{\link[Hmisc]{smean.sdl}},
    \code{\link[Hmisc]{smedian.hilow}}
 }
-

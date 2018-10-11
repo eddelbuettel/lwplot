@@ -21,4 +21,3 @@ margin(4)
 margin(4, 2)
 margin(4, 3, 2, 1)
 }
-

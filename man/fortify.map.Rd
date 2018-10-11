@@ -33,4 +33,3 @@ ggplot(tx, aes(long, lat)) +
 \seealso{
 \code{\link{map_data}} and \code{\link{borders}}
 }
-

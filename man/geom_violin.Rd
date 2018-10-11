@@ -7,12 +7,13 @@
 \usage{
 geom_violin(mapping = NULL, data = NULL, stat = "ydensity",
   position = "dodge", ..., draw_quantiles = NULL, trim = TRUE,
-  scale = "area", na.rm = FALSE, show.legend = NA, inherit.aes = TRUE)
+  scale = "area", na.rm = FALSE, show.legend = NA,
+  inherit.aes = TRUE)
 
 stat_ydensity(mapping = NULL, data = NULL, geom = "violin",
-  position = "dodge", ..., bw = "nrd0", adjust = 1, kernel = "gaussian",
-  trim = TRUE, scale = "area", na.rm = FALSE, show.legend = NA,
-  inherit.aes = TRUE)
+  position = "dodge", ..., bw = "nrd0", adjust = 1,
+  kernel = "gaussian", trim = TRUE, scale = "area", na.rm = FALSE,
+  show.legend = NA, inherit.aes = TRUE)
 }
 \arguments{
 \item{mapping}{Set of aesthetic mappings created by \code{\link{aes}} or
@@ -81,7 +82,7 @@ Violin plot.
 }
 \section{Aesthetics}{
 
-\Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "violin")}
+\Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "violin")}
 }
 
 \section{Computed variables}{
@@ -96,6 +97,7 @@ Violin plot.
   \item{width}{width of violin bounding box}
 }
 }
+
 \examples{
 p <- ggplot(mtcars, aes(factor(cyl), mpg))
 p + geom_violin()
@@ -157,4 +159,3 @@ Plot-Density Trace Synergism. The American Statistician 52, 181-184.
 \code{\link{geom_violin}} for examples, and \code{\link{stat_density}}
   for examples with data along the x axis.
 }
-

@@ -31,4 +31,3 @@ base + geom_line(aes(linetype = variable))
 
 # See scale_manual for more flexibility
 }
-

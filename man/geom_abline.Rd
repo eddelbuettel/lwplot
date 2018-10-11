@@ -9,11 +9,11 @@
 geom_abline(mapping = NULL, data = NULL, ..., slope, intercept,
   na.rm = FALSE, show.legend = NA)
 
-geom_hline(mapping = NULL, data = NULL, ..., yintercept, na.rm = FALSE,
-  show.legend = NA)
+geom_hline(mapping = NULL, data = NULL, ..., yintercept,
+  na.rm = FALSE, show.legend = NA)
 
-geom_vline(mapping = NULL, data = NULL, ..., xintercept, na.rm = FALSE,
-  show.legend = NA)
+geom_vline(mapping = NULL, data = NULL, ..., xintercept,
+  na.rm = FALSE, show.legend = NA)
 }
 \arguments{
 \item{mapping}{Set of aesthetic mappings created by \code{\link{aes}} or
@@ -81,6 +81,7 @@ aesthetics that control the position of the line:
   \item \code{geom_abline}: \code{slope} and \code{intercept}
 }
 }
+
 \examples{
 p <- ggplot(mtcars, aes(wt, mpg)) + geom_point()
 
@@ -116,4 +117,3 @@ ggplot(mtcars, aes(mpg, wt, colour = wt)) +
 See \code{\link{geom_segment}} for a more general approach to
   adding straight line segments to a plot.
 }
-

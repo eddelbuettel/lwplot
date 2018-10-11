@@ -63,7 +63,7 @@ useful when you have discrete data.
 }
 \section{Aesthetics}{
 
-\Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "point")}
+\Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "point")}
 }
 
 \section{Computed variables}{
@@ -73,6 +73,7 @@ useful when you have discrete data.
  \item{prop}{percent of points in that panel at that position}
 }
 }
+
 \examples{
 ggplot(mpg, aes(cty, hwy)) +
  geom_point()
@@ -104,4 +105,3 @@ d + geom_count(aes(size = ..prop.., group = cut)) +
 d + geom_count(aes(size = ..prop.., group = clarity)) +
   scale_size_area(max_size = 10)
 }
-

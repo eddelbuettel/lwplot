@@ -6,7 +6,7 @@
 #' when changes occur.
 #'
 #' @section Aesthetics:
-#' \Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "path")}
+#' \Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "path")}
 #'
 #' @inheritParams layer
 #' @inheritParams geom_point

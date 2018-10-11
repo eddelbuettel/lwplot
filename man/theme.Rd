@@ -159,6 +159,7 @@ The individual theme elements are:
                    (\code{unit}) \cr
 }
 }
+
 \examples{
 \donttest{
 p <- ggplot(mtcars, aes(mpg, wt)) +
@@ -294,4 +295,3 @@ p + mytheme
 
 \code{\link{element_text}}
 }
-

@@ -1,12 +1,15 @@
-Package: ggplot2
-Version: 2.1.0.1
+Package: lwplot
+Version: 0.0.1
 Authors@R: c(
-    person("Hadley", "Wickham", , "hadley@rstudio.com", c("aut", "cre")),
+    person("Hadley", "Wickham", , "hadley@rstudio.com", "aut"),
     person("Winston", "Chang", , "winston@rstudio.com", "aut"),
-    person("RStudio", role = "cph")
+    person("RStudio", role = "cph"),
+    person("Dirk", "Eddelbuettel", ,"edd@debian.org", c("ctb", "cre"))
     )
-Title: An Implementation of the Grammar of Graphics
-Description: An implementation of the grammar of graphics in R. It combines the
+Title: An Lighter-Weight Implementation of Leland Wilkinson's Grammar of Graphics
+Description: An implementation of the grammar of graphics in R, building on the
+    foundation create by 'ggplot2' but being more conservative in the use of
+    dependencies. It combines the
     advantages of both base and lattice graphics: conditioning and shared axes
     are handled automatically, and you can still build up a plot step by step
     from multiple data sources. It also implements a sophisticated
@@ -75,12 +78,13 @@ Collate: 'ggproto.r' 'aaa-.r' 'aes-calculated.r'
         'utilities-matrix.r' 'utilities-resolution.r'
         'utilities-table.r' 'zxx.r' 'zzz.r'
 VignetteBuilder: knitr
-RoxygenNote: 5.0.1
+RoxygenNote: 6.1.0
 NeedsCompilation: no
 Packaged: 2016-02-29 20:47:22 UTC; hadley
-Author: Hadley Wickham [aut, cre],
+Author: Hadley Wickham [aut],
   Winston Chang [aut],
-  RStudio [cph]
-Maintainer: Hadley Wickham <hadley@rstudio.com>
+  RStudio [cph],
+  Dirk Eddelbuettel [ctb, cre]
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Repository: CRAN
 Date/Publication: 2016-03-01 15:47:24

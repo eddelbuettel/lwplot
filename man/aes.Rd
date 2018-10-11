@@ -47,4 +47,3 @@ See
    \code{\link{aes_linetype_size_shape}} and \code{\link{aes_position}}
    for more specific examples with different aesthetics.
 }
-

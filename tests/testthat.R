@@ -1,4 +1,4 @@
 library(testthat)
-library(ggplot2)
+library(lwplot)
 
-test_check("ggplot2")
+test_check("lwplot")

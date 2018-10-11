@@ -7,12 +7,13 @@
 \usage{
 geom_quantile(mapping = NULL, data = NULL, stat = "quantile",
   position = "identity", ..., lineend = "butt", linejoin = "round",
-  linemitre = 1, na.rm = FALSE, show.legend = NA, inherit.aes = TRUE)
+  linemitre = 1, na.rm = FALSE, show.legend = NA,
+  inherit.aes = TRUE)
 
 stat_quantile(mapping = NULL, data = NULL, geom = "quantile",
   position = "identity", ..., quantiles = c(0.25, 0.5, 0.75),
-  formula = NULL, method = "rq", method.args = list(), na.rm = FALSE,
-  show.legend = NA, inherit.aes = TRUE)
+  formula = NULL, method = "rq", method.args = list(),
+  na.rm = FALSE, show.legend = NA, inherit.aes = TRUE)
 }
 \arguments{
 \item{mapping}{Set of aesthetic mappings created by \code{\link{aes}} or
@@ -78,7 +79,7 @@ This can be used as a continuous analogue of a geom_boxplot.
 }
 \section{Aesthetics}{
 
-\Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "quantile")}
+\Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "quantile")}
 }
 
 \section{Computed variables}{
@@ -87,6 +88,7 @@ This can be used as a continuous analogue of a geom_boxplot.
   \item{quantile}{quantile of distribution}
 }
 }
+
 \examples{
 m <- ggplot(mpg, aes(displ, 1 / hwy)) + geom_point()
 m + geom_quantile()
@@ -103,4 +105,3 @@ m + geom_quantile(method = "rqss", lambda = 0.1)
 # Set aesthetics to fixed value
 m + geom_quantile(colour = "red", size = 2, alpha = 0.5)
 }
-

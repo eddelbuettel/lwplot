@@ -57,8 +57,9 @@ Does not affect position scales.
 }
 \section{Aesthetics}{
 
-\Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "map")}
+\Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "map")}
 }
+
 \examples{
 # When using geom_polygon, you will typically need two data frames:
 # one contains the coordinates of each polygon (positions),  and the
@@ -105,4 +106,3 @@ if (require(maps)) {
     facet_wrap( ~ variable)
 }
 }
-

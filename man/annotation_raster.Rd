@@ -47,4 +47,3 @@ ggplot(mtcars, aes(mpg, wt)) +
   annotation_raster(rainbow2, -Inf, Inf, -Inf, Inf, interpolate = TRUE) +
   geom_point()
 }
-

@@ -60,8 +60,9 @@ Marginal rug plots.
 }
 \section{Aesthetics}{
 
-\Sexpr[results=rd,stage=build]{ggplot2:::rd_aesthetics("geom", "rug")}
+\Sexpr[results=rd,stage=build]{lwplot:::rd_aesthetics("geom", "rug")}
 }
+
 \examples{
 p <- ggplot(mtcars, aes(wt, mpg))
 p + geom_point()
@@ -70,4 +71,3 @@ p + geom_point() + geom_rug(sides="b")    # Rug on bottom only
 p + geom_point() + geom_rug(sides="trbl") # All four sides
 p + geom_point() + geom_rug(position='jitter')
 }
-

@@ -55,4 +55,3 @@ scales between different plots.
 ggplot(mtcars, aes(wt, mpg))
 # Nothing to see here!
 }
-

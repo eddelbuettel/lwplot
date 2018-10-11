@@ -46,4 +46,3 @@ ggplot(mtcars, aes(mpg, wt)) +
 For changing x or y axis limits \strong{without} dropping data
   observations, see \code{\link{coord_cartesian}}.
 }
-
