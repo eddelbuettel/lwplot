@@ -25,7 +25,7 @@ polygons, see \code{\link[maps]{map}} for details.}
 Create a layer of map borders.
 }
 \examples{
-if (require("maps")) {
+if (require("maps") && require("mapproj")) {
 
 ia <- map_data("county", "iowa")
 mid_range <- function(x) mean(range(x))

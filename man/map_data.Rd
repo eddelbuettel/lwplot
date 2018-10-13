@@ -26,7 +26,7 @@ for more details.}
 Create a data frame of map data.
 }
 \examples{
-if (require("maps")) {
+if (require("maps") && require("mapproj")) {
 states <- map_data("state")
 arrests <- USArrests
 names(arrests) <- tolower(names(arrests))

@@ -9,7 +9,7 @@
 #' @param data not used by this method
 #' @param ... not used by this method
 #' @examples
-#' if (require("maps")) {
+#' if (require("maps") && require("mapproj")) {
 #' ca <- map("county", "ca", plot = FALSE, fill = TRUE)
 #' head(fortify(ca))
 #' ggplot(ca, aes(long, lat)) +
@@ -47,7 +47,7 @@ fortify.map <- function(model, data, ...) {
 #' @param ... all other arguments passed on to \code{\link[maps]{map}}
 #' @export
 #' @examples
-#' if (require("maps")) {
+#' if (require("maps") && require("mapproj")) {
 #' states <- map_data("state")
 #' arrests <- USArrests
 #' names(arrests) <- tolower(names(arrests))
@@ -79,7 +79,7 @@ map_data <- function(map, region = ".", exact = FALSE, ...) {
 #' @param ... other arguments passed onto \code{\link{geom_polygon}}
 #' @export
 #' @examples
-#' if (require("maps")) {
+#' if (require("maps") && require("mapproj")) {
 #'
 #' ia <- map_data("county", "iowa")
 #' mid_range <- function(x) mean(range(x))

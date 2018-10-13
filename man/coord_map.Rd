@@ -88,6 +88,7 @@ usamap + coord_map("stereographic")
 usamap + coord_map("conic", lat0 = 30)
 usamap + coord_map("bonne", lat0 = 50)
 
+if (require("mapproj")) {
 # World map, using geom_path instead of geom_polygon
 world <- map_data("world")
 worldmap <- ggplot(world, aes(x=long, y=lat, group=group)) +
@@ -101,5 +102,6 @@ worldmap + coord_map("ortho")
 worldmap + coord_map("ortho", orientation = c(-90, 0, 0))
 # Centered on New York (currently has issues with closing polygons)
 worldmap + coord_map("ortho", orientation = c(41, -74, 0))
+}
 }
 }
