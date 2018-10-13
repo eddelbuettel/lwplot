@@ -154,7 +154,7 @@ test_that("find_global searches in the right places", {
 
   # This should find the scale object in the package environment
   expect_identical(find_global("scale_colour_hue", testenv),
-    ggplot2::scale_colour_hue)
+    lwplot::scale_colour_hue)
 
   # Set an object with the same name in the environment
   testenv$scale_colour_hue <- "foo"
@@ -165,5 +165,5 @@ test_that("find_global searches in the right places", {
   # If we search in the empty env, we should end up with the object
   # from the ggplot2 namespace
   expect_identical(find_global("scale_colour_hue", emptyenv()),
-    ggplot2::scale_colour_hue)
+    lwplot::scale_colour_hue)
 })
