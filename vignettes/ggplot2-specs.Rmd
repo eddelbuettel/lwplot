@@ -10,7 +10,7 @@ vignette: >
 ---
 
 ```{r, include = FALSE}
-library(ggplot2)
+library(lwplot)
 knitr::opts_chunk$set(fig.dpi = 96)
 ```
 
