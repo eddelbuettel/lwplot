@@ -1,26 +1,57 @@
-# ggplot2
 
-[![Build Status](https://travis-ci.org/hadley/ggplot2.png?branch=master)](https://travis-ci.org/hadley/ggplot2)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ggplot2)](http://cran.r-project.org/package=ggplot2)
+## lwplot
 
-ggplot2 is a plotting system for R, based on the grammar of graphics, which tries to take the good parts of base and lattice graphics and avoid bad parts. It takes care of many of the fiddly details
-that make plotting a hassle (like drawing legends) as well as providing a powerful model of graphics that makes it easy to produce complex multi-layered graphics.
+This is an *experimental* fork of [ggplot2](README-ggplot2.md) which aims to explore if we 
+can make it part of the [tinyverse](http://www.tinyverse.org).
 
-Find out more at <http://ggplot2.org>, and check out the nearly 500
-examples of ggplot in use.  If you're interested, you can also sign up to
-the [ggplot2 mailing list at](http://groups.google.com/group/ggplot2).
+### What's with the name?
 
-## Installation
+LW can stand for _lighter-weight_ but also Leland Wilkinson of _Grammar of Graphics_ fame.
 
-Get the released version from CRAN:
+### Which Version ?
 
-```R
-install.packages("ggplot2")
+We started off ggplot2 2.1.0 which still had somewhat moderate dependencies:
+
+```
+Depends: R (>= 3.1)
+Imports: digest, grid, gtable (>= 0.1.1), MASS, plyr (>= 1.7.1),
+        reshape2, scales (>= 0.3.0), stats
 ```
 
-Or the development version from github:
+Version 2.2.0 introduced the `tibble`:
 
-```R
-# install.packages("devtools")
-devtools::install_github("hadley/ggplot2")
 ```
+Depends: R (>= 3.1)
+Imports: digest, grid, gtable (>= 0.1.1), MASS, plyr (>= 1.7.1),
+        reshape2, scales (>= 0.4.1), stats, tibble, lazyeval
+```
+
+Version 3.0.0 is all NSE:
+
+```
+Depends: R (>= 3.1)
+Imports: digest, grid, gtable (>= 0.1.1), lazyeval, MASS, mgcv, plyr
+        (>= 1.7.1), reshape2, rlang, scales (>= 0.5.0), stats, tibble,
+        viridisLite, withr (>= 2.0.0)
+```
+
+Maybe we can stay at what 2.1.0 and even remove `plyr` and `reshape2` 
+by introducing `data.table`.
+
+### Status ?
+
+Not bad. After some minimal changes, it passes `R CMD check` as `lwplot`
+
+### Who ?
+
+Dirk Eddelbuettel for this.
+
+Hadley Wickham and many collaborators for the underlying ggplot2 2.1.0.
+
+### License
+
+GPL-2 as before
+
+### Anything else ?
+
+Please don't distribute this yet.
