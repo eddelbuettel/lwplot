@@ -55,7 +55,7 @@ StatContour <- ggproto("StatContour", Stat,
 )
 
 
-# v3d <- reshape2::melt(volcano)
+# v3d <- data.table::melt(volcano)
 # names(v3d) <- c("x", "y", "z")
 #
 # breaks <- seq(95, 195, length.out = 10)

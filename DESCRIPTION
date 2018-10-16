@@ -1,5 +1,5 @@
 Package: lwplot
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(
     person("Hadley", "Wickham", , "hadley@rstudio.com", "aut"),
     person("Winston", "Chang", , "winston@rstudio.com", "aut"),
@@ -18,7 +18,7 @@ Description: An implementation of the grammar of graphics in R, building on the
     documentation and examples.
 Depends: R (>= 3.1)
 Imports: digest, grid, gtable (>= 0.1.1), MASS, plyr (>= 1.7.1),
-        reshape2, scales (>= 0.3.0), stats
+        reshape2, data.table, scales (>= 0.3.0), stats
 Suggests: covr, ggplot2movies, hexbin, Hmisc, lattice, mapproj, maps,
         maptools, mgcv, multcomp, nlme, testthat (>= 0.11.0), quantreg,
         knitr, rpart, rmarkdown, svglite
@@ -88,3 +88,4 @@ Author: Hadley Wickham [aut],
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Repository: CRAN
 Date/Publication: 2016-03-01 15:47:24
+Encoding: UTF-8

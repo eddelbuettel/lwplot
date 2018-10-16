@@ -92,7 +92,7 @@ ggplot(values, aes(fill = value)) +
 
 # Better example
 crimes <- data.frame(state = tolower(rownames(USArrests)), USArrests)
-crimesm <- reshape2::melt(crimes, id = 1)
+crimesm <- data.table::melt(crimes, id = 1)
 if (require(maps)) {
   states_map <- map_data("state")
   ggplot(crimes, aes(map_id = state)) +
