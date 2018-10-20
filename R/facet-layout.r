@@ -21,7 +21,8 @@ layout_grid <- function(data, rows = NULL, cols = NULL, margins = NULL,
   base <- df.grid(base_rows, base_cols)
 
   # Add margins
-  base <- reshape2::add_margins(base, list(names(rows), names(cols)), margins)
+  #base <- reshape2::add_margins(base, list(names(rows), names(cols)), margins)
+  base <- add_margins(base, list(names(rows), names(cols)), margins)
   # Work around bug in reshape2
   base <- unique(base)
 

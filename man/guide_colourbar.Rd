@@ -116,7 +116,7 @@ As for how to specify the guide for each scale in more detail,
 see \code{\link{guides}}.
 }
 \examples{
-df <- reshape2::melt(outer(1:4, 1:4), varnames = c("X1", "X2"))
+df <- dtouter(4) # from reshape2::melt(outer(1:4,1:4), varnames=...)
 
 p1 <- ggplot(df, aes(X1, X2)) + geom_tile(aes(fill = value))
 p2 <- p1 + geom_point(aes(size = value))

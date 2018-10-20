@@ -50,7 +50,7 @@ This coordinate system provides the full range of map projections available
 in the mapproj package.
 }
 \examples{
-if (require("maps")) {
+if (requireNamespace("maps", quietly=TRUE)) {
 nz <- map_data("nz")
 # Prepare a map of NZ
 nzmap <- ggplot(nz, aes(x = long, y = lat, group = group)) +

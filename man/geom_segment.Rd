@@ -100,10 +100,12 @@ b + geom_curve(
   arrow = arrow(length = unit(0.03, "npc"))
 )
 
+if (requireNamespace("maps", quietly=TRUE)) {
 ggplot(seals, aes(long, lat)) +
   geom_segment(aes(xend = long + delta_long, yend = lat + delta_lat),
     arrow = arrow(length = unit(0.1,"cm"))) +
   borders("state")
+}
 
 # You can also use geom_segment to recreate plot(type = "h") :
 counts <- as.data.frame(table(x = rpois(100,5)))

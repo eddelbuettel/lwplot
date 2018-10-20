@@ -18,7 +18,7 @@ This function turns a map into a data frame that can more easily be
 plotted with ggplot2.
 }
 \examples{
-if (require("maps") && require("mapproj")) {
+if (requireNamespace("maps",quietly=TRUE) && requireNamespace("mapproj",quietly=TRUE)){
 ca <- map("county", "ca", plot = FALSE, fill = TRUE)
 head(fortify(ca))
 ggplot(ca, aes(long, lat)) +

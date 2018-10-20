@@ -16,7 +16,7 @@ converted into the right format by using \code{\link{fortify}}}
 Annotation: maps.
 }
 \examples{
-if (require("maps")) {
+if (requireNamespace("maps", quietly=TRUE)) {
 usamap <- map_data("state")
 
 seal.sub <- subset(seals, long > -130 & lat < 45 & lat > 40)
