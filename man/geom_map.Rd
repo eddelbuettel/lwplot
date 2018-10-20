@@ -92,8 +92,8 @@ ggplot(values, aes(fill = value)) +
 
 # Better example
 crimes <- data.frame(state = tolower(rownames(USArrests)), USArrests)
-crimesm <- data.table::melt(crimes, id = 1)
-if (require(maps)) {
+crimesm <- dtmelt(crimes, id = 1)
+if (requireNamespace("maps", quietly=TRUE)) {
   states_map <- map_data("state")
   ggplot(crimes, aes(map_id = state)) +
     geom_map(aes(fill = Murder), map = states_map) +

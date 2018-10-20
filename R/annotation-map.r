@@ -8,7 +8,7 @@ NULL
 #' @param ... other arguments used to modify aesthetics
 #' @export
 #' @examples
-#' if (require("maps")) {
+#' if (requireNamespace("maps", quietly=TRUE)) {
 #' usamap <- map_data("state")
 #'
 #' seal.sub <- subset(seals, long > -130 & lat < 45 & lat > 40)

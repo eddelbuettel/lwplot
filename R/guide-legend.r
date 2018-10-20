@@ -62,7 +62,7 @@
 #' @family guides
 #' @examples
 #' \donttest{
-#' df <- data.table::melt(outer(1:4, 1:4), varnames = c("X1", "X2"))
+#' df <- dtouter(4) # from reshape2::melt(outer(1:4,1:4), varnames=...)
 #'
 #' p1 <- ggplot(df, aes(X1, X2)) + geom_tile(aes(fill = value))
 #' p2 <- p1 + geom_point(aes(size = value))

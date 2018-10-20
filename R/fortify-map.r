@@ -9,7 +9,7 @@
 #' @param data not used by this method
 #' @param ... not used by this method
 #' @examples
-#' if (require("maps") && require("mapproj")) {
+#' if (requireNamespace("maps",quietly=TRUE) && requireNamespace("mapproj",quietly=TRUE)){
 #' ca <- map("county", "ca", plot = FALSE, fill = TRUE)
 #' head(fortify(ca))
 #' ggplot(ca, aes(long, lat)) +
@@ -79,7 +79,7 @@ map_data <- function(map, region = ".", exact = FALSE, ...) {
 #' @param ... other arguments passed onto \code{\link{geom_polygon}}
 #' @export
 #' @examples
-#' if (require("maps") && require("mapproj")) {
+#' if (requireNamespace("maps",quietly=TRUE) && require("mapproj",quietly=TRUE)) {
 #'
 #' ia <- map_data("county", "iowa")
 #' mid_range <- function(x) mean(range(x))

@@ -31,7 +31,7 @@
 #' @param ylim manually specific y limits (in degrees of latitude)
 #' @export
 #' @examples
-#' if (require("maps")) {
+#' if (requireNamespace("maps", quietly=TRUE)) {
 #' nz <- map_data("nz")
 #' # Prepare a map of NZ
 #' nzmap <- ggplot(nz, aes(x = long, y = lat, group = group)) +
