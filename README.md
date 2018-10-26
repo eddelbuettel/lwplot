@@ -1,4 +1,3 @@
-
 ## lwplot
 
 This is an *experimental* fork of [ggplot2](README-ggplot2.md) which aims to explore if we 
@@ -18,7 +17,7 @@ Imports: digest, grid, gtable (>= 0.1.1), MASS, plyr (>= 1.7.1),
         reshape2, scales (>= 0.3.0), stats
 ```
 
-Version 2.2.0 introduced the `tibble`:
+Version 2.2.0 introduced the `tibble` and `lazyeval`:
 
 ```
 Depends: R (>= 3.1)
@@ -26,7 +25,7 @@ Imports: digest, grid, gtable (>= 0.1.1), MASS, plyr (>= 1.7.1),
         reshape2, scales (>= 0.4.1), stats, tibble, lazyeval
 ```
 
-Version 3.0.0 is all NSE:
+Version 3.0.0 adds `rlang`, `mgcv`, `viridisLite`, `withr`:
 
 ```
 Depends: R (>= 3.1)
@@ -40,7 +39,10 @@ by introducing `data.table`.
 
 ### Status ?
 
-Not bad. After some minimal changes, it passes `R CMD check` as `lwplot`
+Not bad. After some minimal changes, it passes `R CMD check` as `lwplot`. 
+
+And following some initial work, `reshape2` is gone. `plyr` is still in, and 
+removing it will be quite some work.
 
 ### Who ?
 
