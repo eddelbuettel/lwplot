@@ -24,8 +24,8 @@ Suggests: covr, ggplot2movies, hexbin, Hmisc, lattice, mapproj, maps,
         knitr, rpart, rmarkdown, svglite
 Enhances: sp
 License: GPL-2
-URL: http://ggplot2.org, https://github.com/hadley/ggplot2
-BugReports: https://github.com/hadley/ggplot2/issues
+URL: http://ggplot2.org, https://github.com/eddelbuettel/lwplot
+BugReports: https://github.com/eddelbuettel/lwplot/issues
 LazyData: true
 Collate: 
     'ggproto.r'
