@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 ^local
 .*\.tar\.gz$
+^vignettes
